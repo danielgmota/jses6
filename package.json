@@ -10,10 +10,13 @@
     "@babel/preset-env": "^7.6.3",
     "babel-loader": "^8.0.6",
     "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.10"
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
   },
   "scripts": {
     "classe": "babel ./main.js -o ./bundle.js -w",
-    "webpack": "webpack --mode=development -W"
+    "webpack": "webpack --mode=development -W",
+    "webpack_server": "webpack-dev-server --mode=development",
+    "webpack_build": "webpack --mode=production"
   }
 }
